@@ -118,6 +118,8 @@ int main(void)
 	  Modbus_Protocal_Worker();
 	  Heartbeat();
 	  Routine();
+	  VacuumOn_Off();
+	  Gripper_Movement();
   }
   /* USER CODE END 3 */
 }
