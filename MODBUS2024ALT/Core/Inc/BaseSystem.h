@@ -12,19 +12,19 @@
 
 ModbusHandleTypedef hmodbus;
 u16u8_t registerFrame[200];
-int HeartFlag = 0;
-int VacuumState;
-int GripperState;
-float GoalPoint;
-float ShelvePosition_1 = 1;
-float ShelvePosition_2 = 2;
-float ShelvePosition_3 = 3;
-float ShelvePosition_4 = 4;
-float ShelvePosition_5 = 5;
-int PickOder;
-int PlaceOder;
-int PickShelves;
-int PlaceShelves;
+uint16_t HeartFlag = 0;
+uint16_t VacuumState;
+uint16_t GripperState;
+uint16_t GoalPoint;
+uint16_t ShelvePosition_1 = 1;
+uint16_t ShelvePosition_2 = 2;
+uint16_t ShelvePosition_3 = 3;
+uint16_t ShelvePosition_4 = 4;
+uint16_t ShelvePosition_5 = 5;
+uint16_t PickOder;
+uint16_t PlaceOder;
+uint16_t PickShelves;
+uint16_t PlaceShelves;
 
 void Heartbeat(){
 	static uint64_t timestamp = 0;
