@@ -120,6 +120,12 @@ int main(void)
 	  Routine();
 	  VacuumOn_Off();
 	  Gripper_Movement();
+	  Set_Shelves();
+	  GetGoalPoint();
+	  RunPointMode();
+	  SetHome();
+	  GetPick_PlaceOrder();
+	  RunJogMode();
   }
   /* USER CODE END 3 */
 }
